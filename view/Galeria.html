@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/galeria.css">
+</head>
+
+<body>
+    
+  <!----------------Abaixo o Header junto com a nav---------------------->
+    <header id="header">
+        <nav class="nav">
+
+            <button class="menu-btn">
+                ☰
+            </button>
+
+            <ul class="menu-lista">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="../view/Timeline.html">Timeline</a></li>
+                <li><a href="#">Premios</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="../view/Quiz.html">Quiz</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+<main> 
+
+<section class="galeria">
+
+    <p class="titulo-galeria">
+        Galeria
+    </p>
+
+    <div class="filtros">
+
+        <button onclick="filtrar('todos')">
+            Todos
+        </button>
+
+        <button onclick="filtrar('yoongi')">
+            Yoongi
+        </button>
+
+        <button onclick="filtrar('iverson')">
+            Iverson
+        </button>
+
+    </div>
+
+    <div class="grid-galeria">
+
+        <div class="item yoongi">
+            <img src="../img/Yoongi galeria.jpg" alt="Yoongi">
+        </div>
+
+        <div class="item yoongi">
+            <img src="../img/Yoongi galeria 2.jpg" alt="Yoongi">
+        </div>
+
+        <div class="item yoongi">
+            <img src="../img/Yoongi galeria 3.jpg" alt="Yoongi">
+        </div>
+
+        <div class="item yoongi">
+            <img src="../img/Yoongi galeria 4.webp" alt="Yoongi">
+        </div>
+
+        <div class="item iverson">
+            <img src="../img/iverson galeria.webp" alt="Iverson">
+        </div>
+
+        <div class="item iverson">
+            <img src="../img/iverson galeria 5.avif" alt="Iverson">
+        </div>
+
+        <div class="item iverson">
+            <img src="../img/iverson galeria 3.jpg" alt="Iverson">
+        </div>
+
+        <div class="item iverson">
+            <img src="../img/iverson galeria 4.jpg" alt="Iverson">
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+
+    <script src="../JS/galeria.js"></script>
+</body>
+
+</html>
