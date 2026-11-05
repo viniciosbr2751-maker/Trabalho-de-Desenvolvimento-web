@@ -42,6 +42,18 @@ const dados = {
                 ano: "2023",
                 titulo: "Turnê D-DAY",
                 descricao: "Primeira turnê mundial solo."
+            },
+
+            {
+                ano: "2023",
+                titulo: "Embaixador da NBA",
+                descricao: "Em 2023 Yoongi se torna embaixador oficial da NBA, que marcou presença em sua primeira turnê mundial solo."
+            },
+
+            {
+                ano: "2023-2025",
+                titulo: "Serviço militar",
+                descricao: "Serve o exército sul-coreano de 2023 até 2025."
             }
 
         ]
