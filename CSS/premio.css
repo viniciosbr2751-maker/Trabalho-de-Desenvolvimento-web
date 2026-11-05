@@ -135,8 +135,8 @@ main{
 }
 
 .coluna{
-    width:660px;
-    max-width:100%;
+    width:450px;
+    max-width:80%;
     border-radius:25px;
     padding:30px;
     color:white;
