@@ -1,9 +1,11 @@
 body {
     background-image: url(../img/imagem_Principal.jpg);
-    background-size: 100vw;
-    height: 62vw;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
     margin: auto;
     padding: 0;
+    font-family: Segoe UI, sans-serif;
 }
 
 @viewport {
@@ -112,163 +114,162 @@ header.flotante .menu-lista {
 
 /* main content abaixo */
 
-.cards{
-    width:min(1400px,95%);
-    margin:100px auto;
+.cards {
+    width: min(1400px, 95%);
+    margin: 100px auto;
 
-    display:flex;
-    justify-content:center;
-    gap:40px;
-
-    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.card{
+.card {
     margin-top: 5vw;
-    width:680px;
-    height:660px;
-    display:flex;
-    overflow:hidden;
-    border-radius:25px;
-    transition:.6s;
+    width: 550px;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: .6s;
 }
 
 /* TEMAS */
 
-.yoongi{
+.yoongi {
     background:
-    linear-gradient(
-        135deg,
-        #a45cff,
-        #7726f3
-    );
+        linear-gradient(135deg,
+            #a45cff,
+            #7726f3);
 }
 
-.iverson{
+.iverson {
     background:
-    linear-gradient(
-        135deg,
-        #ffab4d,
-        #f97316
-    );
+        linear-gradient(135deg,
+            #ffab4d,
+            #f97316);
 }
 
 /* FOTO */
 
-.foto{
-    width:0;
+.foto {
+    width: 0;
 
-    opacity:0;
+    opacity: 0;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    transition:.8s ease;
+    transition: .8s ease;
 
-    transform:translateX(-50px);
+    transform: translateX(-50px);
 }
 
-.foto img{
-    width:100%;
-    height:100%;
+.foto img {
+    width: 100%;
+    height: 100%;
 
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.card:hover .foto{
-    width:45%;
-    opacity:1;
+.card:hover .foto {
+    width: 45%;
+    opacity: 1;
 
-    transform:translateX(0);
+    transform: translateX(0);
 }
 
 /* TEXTO */
 
-.conteudo{
-    flex:1;
+.conteudo {
+    flex: 1;
 
-    position:relative;
+    position: relative;
 
-    padding:40px;
+    padding: 40px;
 
-    color:white;
+    color: white;
 }
 
-.nome{
-    font-size:2.5rem;
-    font-weight:700;
+.nome {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-.funcao{
-    margin-top:20px;
+.funcao {
+    margin-top: 20px;
 }
 
-.descricao{
-    margin-top:20px;
-    line-height:1.8;
+.descricao {
+    margin-top: 20px;
+    line-height: 1.8;
 }
 
-.botao-video{
-    margin-top:30px;
+.botao-video {
+    margin-top: 30px;
 
-    border:none;
+    border: none;
 
-    padding:14px 25px;
+    padding: 14px 25px;
 
-    border-radius:12px;
+    border-radius: 12px;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    font-weight:600;
+    font-weight: 600;
 }
 
 /* VIDEO */
 
-.video-area{
-    display:none;
-
-    width:100%;
-    animation:fade .5s;
+.video-area {
+    display: none;
+    align-items: center;
+    width: 35%;
+    animation: fade .5s;
 }
 
-.video-area.ativo{
-    display:block;
+.video-area.ativo {
+    display: block;
 }
 
-.video-area iframe{
-    width:100%;
-    height:280px;
-
-    border:none;
-
-    border-radius:15px;
+.Yoongivideo {
+    width: 38vw;
+    height: 280px;
+    border: none;
+    border-radius: 15px;
 }
 
-.video-area button{
-    margin-top:15px;
-
-    padding:12px 20px;
-
-    border:none;
-
-    border-radius:10px;
-
-    cursor:pointer;
+.Iversonvideo {
+    width: 38vw;
+    height: 280px;
+    border: none;
+    border-radius: 15px;
 }
 
-.esconder{
-    display:none;
+
+.video-area button {
+    position: relative;
+    top: 5vw;
+    margin-left: 15vw;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-@keyframes fade{
+.esconder {
+    display: none;
+}
 
-    from{
-        opacity:0;
-        transform:translateY(20px);
+@keyframes fade {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
 
-    to{
-        opacity:1;
-        transform:translateY(0);
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 
 }

@@ -34,108 +34,95 @@
 
     <main>
 
-<section class="cards">
+        <section class="cards">
 
-    <!-- YOONGI -->
+            <!-- YOONGI -->
 
-    <div class="card yoongi">
+            <div class="card yoongi">
 
-        <div class="foto">
-            <img src="img/foto index.webp" alt="Yoongi">
-        </div>
+                <div class="foto">
+                    <img src="img/foto index.webp" alt="Yoongi">
+                </div>
 
-        <div class="conteudo">
+                <div class="conteudo">
 
-            <div class="texto">
+                    <div class="texto">
 
-                <p class="nome">Min Yoongi</p>
+                        <p class="nome">Min Yoongi</p>
 
-                <p class="funcao">
-                    Rapper, produtor musical e membro do BTS.
-                </p>
+                        <p class="funcao">
+                            Rapper, produtor musical e membro do BTS.
+                        </p>
 
-                <p class="descricao">
-                    Conhecido também como Agust D,
-                    tornou-se um dos artistas
-                    sul-coreanos mais influentes da atualidade.
-                </p>
+                        <p class="descricao">
+                            Conhecido também como Agust D,
+                            tornou-se um dos artistas
+                            sul-coreanos mais influentes da atualidade.
+                        </p>
 
-                <button
-                class="botao-video"
-                onclick="abrirVideo('videoYoongi',this)">
-                    Assistir vídeo
-                </button>
+                        <button class="botao-video" onclick="abrirVideo('videoYoongi',this)">
+                            Assistir vídeo
+                        </button>
 
-            </div>
+                    </div>
 
-            <div class="video-area" id="videoYoongi">
+                    <div class="video-area" id="videoYoongi">
+                        <video class="Yoongivideo" controls type="video" src="videos/video Yoongi.mp4"></video>
 
-                <iframe
-                src="https://www.youtube.com/embed/iy9qZR_OGa0"
-                allowfullscreen>
-                </iframe>
+                        <button onclick="fecharVideo('videoYoongi')">
+                            Voltar
+                        </button>
 
-                <button
-                onclick="fecharVideo('videoYoongi')">
-                    Voltar
-                </button>
+                    </div>
+
+                </div>
 
             </div>
 
-        </div>
+            <!-- IVERSON -->
 
-    </div>
+            <div class="card iverson">
 
-    <!-- IVERSON -->
+                <div class="foto">
+                    <img src="img/iverson index.jpg" alt="Iverson">
+                </div>
 
-    <div class="card iverson">
+                <div class="conteudo">
 
-        <div class="foto">
-            <img src="img/iverson index.jpg" alt="Iverson">
-        </div>
+                    <div class="texto">
 
-        <div class="conteudo">
+                        <p class="nome">Allen Iverson</p>
 
-            <div class="texto">
+                        <p class="funcao">
+                            Ex-jogador profissional de basquete.
+                        </p>
 
-                <p class="nome">Allen Iverson</p>
+                        <p class="descricao">
+                            Considerado um dos maiores armadores
+                            da história da NBA e um ícone cultural.
+                        </p>
 
-                <p class="funcao">
-                    Ex-jogador profissional de basquete.
-                </p>
+                        <button class="botao-video" onclick="abrirVideo('videoIverson',this)">
+                            Assistir vídeo
+                        </button>
 
-                <p class="descricao">
-                    Considerado um dos maiores armadores
-                    da história da NBA e um ícone cultural.
-                </p>
+                    </div>
 
-                <button
-                class="botao-video"
-                onclick="abrirVideo('videoIverson',this)">
-                    Assistir vídeo
-                </button>
+                    <div class="video-area" id="videoIverson">
 
-            </div>
+                        <video class="Iversonvideo" controls type="video" src="videos/iversson video.mp4"></video>
 
-            <div class="video-area" id="videoIverson">
+                        <button onclick="fecharVideo('videoIverson')">
+                            Voltar
+                        </button>
 
-                <iframe
-                src="https://www.youtube.com/embed/NAZvvaT79g8"
-                allowfullscreen>
-                </iframe>
+                    </div>
 
-                <button
-                onclick="fecharVideo('videoIverson')">
-                    Voltar
-                </button>
+                </div>
 
             </div>
 
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
     </main>
