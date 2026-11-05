@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    
-   <!----------------Abaixo o Header junto com a nav---------------------->
+
+    <!----------------Abaixo o Header junto com a nav---------------------->
     <header id="header">
         <nav class="nav">
 
@@ -23,16 +23,53 @@
                 <li><a href="../view/Galeria.html">Galeria</a></li>
                 <li><a href="../view/Timeline.html">Timeline</a></li>
                 <li><a href="../view/Premios.html">Premios</a></li>
-               <li><a href="../view/Quiz.html">Quiz</a></li>
+                <li><a href="../view/Quiz.html">Quiz</a></li>
             </ul>
 
         </nav>
     </header>
 
-    <!----------------Abaixo a main junto dos banners---------------------->
+    <!----------------Abaixo a main com os premios---------------------->
 
+    <main>
 
+        <h1 class="titulo-pagina">Prêmios e conquistas</h1>
+
+        <section class="colunas">
+
+            <!-- YOONGI -->
+            <div class="coluna yoongi">
+
+                <div class="topo-coluna">
+                    <img src="../img/Yoongi perfil.jpg" alt="Min Yoongi">
+                    <p class="nome">Min Yoongi</p>
+                    <p class="papel">Rapper • Produtor • BTS</p>
+                    <p class="contador" id="contadorYoongi"></p>
+                </div>
+
+                <div class="lista" id="listaYoongi"></div>
+
+            </div>
+
+            <!-- IVERSON -->
+            <div class="coluna iverson">
+
+                <div class="topo-coluna">
+                    <img src="../img/iverson perfil.jpg" alt="Allen Iverson">
+                    <p class="nome">Allen Iverson</p>
+                    <p class="papel">Lenda da NBA</p>
+                    <p class="contador" id="contadorIverson"></p>
+                </div>
+
+                <div class="lista" id="listaIverson"></div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <script src="../JS/premio.js"></script>
 </body>
+
 </html>
