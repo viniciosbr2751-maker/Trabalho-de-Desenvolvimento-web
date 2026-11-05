@@ -114,25 +114,24 @@ header.flotante .menu-lista {
 
 /* main content abaixo */
 
-.cards {
-    width: min(1400px, 95%);
-    margin: 100px auto;
+    .cards {
+        width: min(1400px, 100%);
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
 
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.card {
-    margin-top: 5vw;
-    width: 550px;
-    height: 600px;
-    display: flex;
-    overflow: hidden;
-    border-radius: 25px;
-    transition: .6s;
-}
+    .card {
+        margin-top: 5vw;
+        width: 600px;
+        height: 600px;
+        display: flex;
+        overflow: hidden;
+        border-radius: 25px;
+        transition: .6s;
+    }
 
 /* TEMAS */
 
@@ -154,27 +153,21 @@ header.flotante .menu-lista {
 
 .foto {
     width: 0;
-
     opacity: 0;
-
     overflow: hidden;
-
     transition: .8s ease;
-
     transform: translateX(-50px);
 }
 
 .foto img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
 .card:hover .foto {
     width: 45%;
     opacity: 1;
-
     transform: translateX(0);
 }
 
@@ -182,11 +175,8 @@ header.flotante .menu-lista {
 
 .conteudo {
     flex: 1;
-
     position: relative;
-
     padding: 40px;
-
     color: white;
 }
 
@@ -206,15 +196,10 @@ header.flotante .menu-lista {
 
 .botao-video {
     margin-top: 30px;
-
     border: none;
-
     padding: 14px 25px;
-
     border-radius: 12px;
-
     cursor: pointer;
-
     font-weight: 600;
 }
 
@@ -223,7 +208,7 @@ header.flotante .menu-lista {
 .video-area {
     display: none;
     align-items: center;
-    width: 35%;
+    width: 50%;
     animation: fade .5s;
 }
 
@@ -232,14 +217,14 @@ header.flotante .menu-lista {
 }
 
 .Yoongivideo {
-    width: 38vw;
+    width: 21vw;
     height: 280px;
     border: none;
     border-radius: 15px;
 }
 
 .Iversonvideo {
-    width: 38vw;
+    width: 21vw;
     height: 280px;
     border: none;
     border-radius: 15px;
@@ -249,7 +234,7 @@ header.flotante .menu-lista {
 .video-area button {
     position: relative;
     top: 5vw;
-    margin-left: 15vw;
+    margin-left: 9vw;
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
@@ -271,5 +256,60 @@ header.flotante .menu-lista {
         opacity: 1;
         transform: translateY(0);
     }
+
+}
+
+/*------------------- Media Queries abaixo para telas de até 1450 px notebooks --------------------------*/
+
+
+  @media screen and (min-width: 900px) and (max-width: 1450px) {
+
+
+.cards {
+    width: min(1400px, 100%);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 5vw;
+    width: 550px;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: .6s;
+}
+
+
+
+    .Yoongivideo {
+    width: 38vw;
+    height: 280px;
+    border: none;
+    border-radius: 15px;
+}
+
+.Iversonvideo {
+    width: 38vw;
+    height: 280px;
+    border: none;
+    border-radius: 15px;
+}
+
+.video-area button {
+    position: relative;
+    top: 5vw;
+    margin-left: 15vw;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 
 }
